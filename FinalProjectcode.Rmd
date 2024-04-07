@@ -1,0 +1,41 @@
+---
+title: "STAT345 Final Project Code- Work(out) Smarter"
+author: "Aidan Matthai, Grant Matthai, Luke Schroeder"
+date: "2024-04-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Install packages
+``` {r, message = FALSE}
+library(readxl)
+library(tidyverse)
+library(dplyr)
+library(purrr)
+library(shiny)
+library(ggplot2)
+```
+
+Read in Data from csv file
+``` {r}
+athlete_data <- read_excel("Compiled_Data.xlsx")
+str(athlete_data)
+```
+
+Tidy up athlete data
+``` {r}
+# fix dates to be same format
+athlete_data$Test_Date <- str_replace_all(athlete_data$Test_Date, "\\.", "\\-") 
+athlete_data$Test_Date <- str_replace_all(athlete_data$Test_Date, "\\_", "\\-")
+
+# separate into year, month, and day
+athlete_data <- separate(athlete_data, Test_Date, into = c("Year", "Month", "Day"), sep = "-")
+
+# change into numeric
+athlete_data$Year <- as.numeric(athlete_data$Year)
+athlete_data$Month <- as.numeric(athlete_data$Month)
+athlete_data$Day <- as.numeric(athlete_data$Day)
+```
