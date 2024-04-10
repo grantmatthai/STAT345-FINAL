@@ -1,0 +1,29 @@
+---
+title: "STAT 345 Final Project - Work(out) Smarter"
+author: "Grant Matthai, Aidan Matthai, Luke Schroeder"
+output: html_document
+---
+
+Expected Submission: You will generate a well-written R Markdown report that addresses the following prompts. This R Markdown report should source your analysis code and only display top-level, abstracted code _if/when appropriate_. Choices made during the analysis project should be described and justified in the report. 
+
+
+Advice for getting started:
+
+- Start a conversation chain with your group members. Email is a great place to start, but other options exist (texting, social media platforms, etc.). Set some reasonable expectations for how and when you plan to respond to conversations. It is likely going to be unacceptable to only respond once per week, for example, but also likely unacceptable to expect a response within the hour. Have an honest conversation with your group members about this issue.
+- Start the project from a "top-down design" perspective. So, determine what the major steps of the process are, and determine what the inputs and outputs are for each of those steps (the output of step 1 will likely be the input for step 2, for example). This step is much like writing an outline for a paper before you start to write the paper itself, only much more valuable in a group setting. 
+- Once you have a sense of the big picture (the outline), determine some "due dates" for each step of the process. Work backwards from the final submission date, giving yourselves time to work on each of the parts as needed. Given the top-down design, you should be able to "divide and conquer" -- working on parts of the project that depend on earlier steps.
+- Decide how you plan to share code with each other. Using Git and GitHub is a really good choice here. If not, perhaps some form of shared directory online. In a worst-case scenario, email could also work. 
+- Be prepared to give Dr. Baumann (at least) weekly updates on your progress. Some of this can be done via email, but discuss with your group about times you are each available to meet online as well (in an office-hour-like setting). Feel free to request meetings with Dr. Baumann to get help.
+
+**General advice:** Get started early. If you wait to the last minute, it will not go well. For this project, you may find yourself spending a reasonable amount of time _searching_ for help.
+
+1. _Pre-Workout_ Familiarize yourself with the Borg Rating of Perceived Exertion (RPE). There are many resources online for this, but you might start at [https://my.clevelandclinic.org/health/articles/17450-rated-perceived-exertion-rpe-scale](https://my.clevelandclinic.org/health/articles/17450-rated-perceived-exertion-rpe-scale). Then, explore the two datasets provided. Get a sense for the types of measurements and what they (may) represent. (Feel free to ask questions about the data after you've done a little digging.)
+
+2. _Visualize Success_ Create several complete, polished visualizations for these data. Summary statistics describing the data should also be developed. You may need to consider combining variables (feature engineering) in order to create meaningful graphics. The .docx file provided (`Example Report`) has a couple of desirable graphics, as do the links provided in part 3. 
+
+3. _User Friendly_ Create an interactive document using Shiny that allows for a user to specify variable values and display the visualizations/summaries based on part 2. Your document should also display other relevant summary statistics either in graphic form or tabular form. Additional user-friendly features should be considered. The websites below include some Shiny tutorials as well as example dashboards for athlete monitoring. There are many more of these dashboards published online as well. Feel free to use these as inspiration. 
+
+https://shiny.posit.co/r/gallery/
+https://www.youtube.com/watch?v=Axv4KIma7xM
+https://optimumsportsperformance.com/blog/r-tips-tricks-building-a-shiny-training-load-dashboard/
+https://complementarytraining.net/athlete-monitoring-course-shiny-athletesr-dashboard/
