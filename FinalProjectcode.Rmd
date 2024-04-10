@@ -16,7 +16,7 @@ library(tidyverse)
 library(dplyr)
 library(purrr)
 library(shiny)
-library(ggplot2)
+library(openxlsx)
 ```
 
 Read in Data from csv file
@@ -38,4 +38,7 @@ athlete_data <- separate(athlete_data, Test_Date, into = c("Year", "Month", "Day
 athlete_data$Year <- as.numeric(athlete_data$Year)
 athlete_data$Month <- as.numeric(athlete_data$Month)
 athlete_data$Day <- as.numeric(athlete_data$Day)
+
+# write to a new xlsx file 
+athlete_data <- write.xlsx(athlete_data, "Compiled_Data_Tidy.xlsx")
 ```
